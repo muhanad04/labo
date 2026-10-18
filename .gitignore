@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-pages/
+build/
+coverage/
+.vite/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Local browser research artifacts: do not redistribute vendor material
+research-local/
+.agent-browser/
+
+# Generated verification artifacts (keep design contracts/sidecar)
+*.tsbuildinfo
+test-results/
+playwright-report/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/config.local.json

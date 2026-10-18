@@ -1,0 +1,20 @@
+* Original labo reference fixture: linear 2:1 transformer, 50 Hz phasors
+* ngspice 47. AC amplitudes interpreted consistently as RMS for power calculations.
+Vdrive vin 0 AC 120
+Rsource vin p 0.5
+Rprimary p pi 2
+Lprimary pi 0 2
+Rsecondary s si 0.5
+Lsecondary si 0 0.5
+Kwind Lprimary Lsecondary 0.995
+Rcore p 0 20000
+Rload s 0 100
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+ac lin 1 50 50
+wrdata research-local/reference-transformer.dat v(p) v(s) i(Vdrive) i(Lprimary) i(Lsecondary)
+quit
+.endc
+.end
