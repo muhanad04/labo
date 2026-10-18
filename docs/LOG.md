@@ -1,5 +1,9 @@
 # Development log
 
+## 2026-10-18 — Publication snapshot
+
+At explicit user request, paused further implementation/verification. Created source snapshot commit `181c92a`, then packaged current source for branch-based Pages using Vite only and refreshed generated `/docs` assets. No test suites, browser checks, formatting or TypeScript verification. Publication commit prepared for `muhanad04/labo`; user enables Pages on main → /docs. Earlier passing evidence does not certify this snapshot.
+
 Keep short entries: change, reason, verification and remaining scope. Current session context belongs in NOW.md, not a growing transcript.
 
 ## 2026-10-18 — Drawing preference and polarity marks
